@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservacion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="reserva.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="form-container">
+            <h1>Reservar Cita</h1>
+            <p>Reserve una cita: </p>
+            <form id="reserva-form">
+                <label for="user" class="sr-only"> User</label>
+                <input type="text" name="user" id="user" placeholder="Nombre del Paciente">
+                <label for="sexo" class="sr-only"> Sexo</label>
+                <input type="text" name="sexo" id="sexo" placeholder="Sexo del Paciente">
+                <label for="telefono" class="sr-only"> Telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="telefono del Paciente">
+                <label for="email" class="sr-only"> Email</label>
+                <input type="email" name="email" id="email" placeholder="email del Paciente">
+
+                <p>Seleccione el doctor:</p>
+                <label>
+                    <input type="checkbox" name="doctores" value="doctor1"> Pediatra Gabriel Coding
+                </label>
+                <label>
+                    <input type="checkbox" name="doctores" value="doctor2"> Cirujana Manuela Liz
+                </label>
+                <label>
+                    <input type="checkbox" name="doctores" value="doctor3"> Cirujano Alberto Jyung
+                </label>
+                <label>
+                    <input type="checkbox" name="doctores" value="doctor2"> Medico General Pancho Villa
+                </label>
+                <label>
+                    <input type="checkbox" name="doctores" value="doctor3"> Enfermero Alex Karev
+                </label>
+
+                <label for="fecha" class="sr-only"> Fecha</label>
+                <input type="date" name="" id="fecha" placeholder="fecha de la cita">
+                <button type="submit">Reservar</button>
+                <p class="error escondido">ERROR AL Reservar</p>
+            </form>
+            <p>¿Todavia no tienes una cuenta? - <a href="/register">REGISTRATE</a></p>
+
+        </div>
+    </main>
+</body>
+</html>
